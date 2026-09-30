@@ -100,3 +100,4 @@ Este projeto é um MVP prático para vender como solução SaaS para barbearias,
 
 Este é um MVP funcional para demonstração e venda inicial. Pode ser expandido para uma plataforma completa, com autenticação, base de dados em produção, integrações e painel de administração robusto.
 # barbaria
+# barbaria
