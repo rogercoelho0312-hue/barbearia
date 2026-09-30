@@ -5,7 +5,7 @@ const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const DB_PATH = path.join(__dirname, 'barbearia.db');
+const DB_PATH = path.resolve(process.env.DB_PATH || path.join(__dirname, 'barbearia.db'));
 const ADMIN_CREDENTIALS = { username: 'roger9090', password: 'karina90' };
 const adminTokens = new Map();
 

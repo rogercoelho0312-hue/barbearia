@@ -37,6 +37,15 @@ Este projeto é um MVP prático para vender como solução SaaS para barbearias,
 
    http://localhost:3000/admin.html
 
+## Deploy em produção
+
+- Configure a raiz do projeto como a pasta que contém este `package.json` e `server.js`.
+- Comando de instalação: `npm install`.
+- Comando de inicialização: `npm start`.
+- A aplicação usa a porta definida pela variável `PORT` da hospedagem.
+- Para manter os dados entre reinicializações e novos deploys, configure `DB_PATH` com o caminho completo de um arquivo SQLite em um disco persistente. Sem essa variável, o banco será criado como `barbearia.db` na raiz do projeto.
+- Não configure `Barbearia Agenda Pro/` como diretório raiz: essa cópia antiga foi removida.
+
 ## Modelo de negócio
 
 ### 1) SaaS mensal
