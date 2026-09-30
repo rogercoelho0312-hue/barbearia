@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Barbearia Agenda Pro">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#121417"/>
+      <stop offset="100%" stop-color="#1b1d20"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6d28a"/>
+      <stop offset="100%" stop-color="#c98a3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <circle cx="64" cy="64" r="42" fill="#f3f0eb" opacity="0.08"/>
+  <path d="M39 41c0-9 7-16 16-16h18c9 0 16 7 16 16v10c0 5-3 9-8 12l-7 4v14c0 10-8 18-18 18s-18-8-18-18V67l-7-4c-5-3-8-7-8-12V41z" fill="url(#gold)"/>
+  <path d="M49 44h30v7H49zm-6 14h42v8H43zm10 16h22v8H53z" fill="#111418" opacity="0.9"/>
+  <path d="M64 19v16M48 60h32" stroke="#111418" stroke-width="6" stroke-linecap="round"/>
+  <path d="M32 85c8 8 18 12 32 12s24-4 32-12" fill="none" stroke="#f6d28a" stroke-width="6" stroke-linecap="round"/>
+</svg>

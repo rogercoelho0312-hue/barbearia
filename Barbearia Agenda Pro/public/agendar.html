@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar | Barbearia Agenda Pro</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">Barbearia Agenda Pro</div>
+        <nav>
+          <a href="/">Início</a>
+          <a href="/agendar">Agendar</a>
+          <a href="/login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Agendamento online</p>
+          <h1>Reserve seu horário em poucos segundos.</h1>
+          <p class="subtext">
+            Sistema pensado para barbearias, salões e estabelecimentos locais que querem aumentar a produtividade e reduzir faltas.
+          </p>
+        </div>
+      </section>
+
+      <section class="card booking-card">
+        <form id="booking-form">
+          <div class="field-grid">
+            <div class="field">
+              <label for="customer-name">Seu nome</label>
+              <input id="customer-name" name="customerName" type="text" required />
+            </div>
+            <div class="field">
+              <label for="phone">WhatsApp / contato</label>
+              <input id="phone" name="phone" type="tel" required />
+            </div>
+            <div class="field">
+              <label for="service">Serviço</label>
+              <select id="service" name="serviceId" required></select>
+            </div>
+            <div class="field">
+              <label for="professional">Profissional</label>
+              <select id="professional" name="professionalId" required></select>
+            </div>
+            <div class="field">
+              <label for="date">Data</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+          </div>
+
+          <div class="slots-block">
+            <div class="slots-header">
+              <h3>Horários disponíveis</h3>
+            </div>
+            <div id="slots" class="slots"></div>
+          </div>
+
+          <button type="submit" class="primary-btn">Confirmar agendamento</button>
+        </form>
+
+        <div id="message" class="message" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
